@@ -1,0 +1,7 @@
+ 
+
+config BR2_PACKAGE_I2C_TEST
+	bool "i2c-test"
+	help
+	  Includes modules for testing adc.
+

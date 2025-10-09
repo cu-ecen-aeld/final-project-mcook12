@@ -1,0 +1,21 @@
+#!/bin/sh
+
+I2C_BUS=1
+
+case "$1" in
+	start)
+		echo  "Starting aesdchar"
+		modprobe i2c-bcm2835
+		modprobe i2c-dev
+		sleep 0.5
+		;;
+	stop)
+		echo "Stopping aesdchar"
+		modprobe -r i2c-dev i2c-bcm2835
+		;;
+	*)
+	echo "Usage: $0 {start|stop}"
+	exit 1
+esac
+
+exit 0;
