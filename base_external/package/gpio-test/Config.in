@@ -1,0 +1,7 @@
+ 
+
+config BR2_PACKAGE_GPIO_TEST
+	bool "gpio-test"
+	help
+	  Includes modules for testing GPIO output to LED.
+
